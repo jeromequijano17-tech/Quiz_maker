@@ -8,10 +8,10 @@ const app = express();
 const PORT = Number(process.env.PORT) || 3000;
 
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || "localhost",
-  port: Number(process.env.DB_PORT) || 3306,
-  user: process.env.DB_USER || "root",
-  password: process.env.DB_PASSWORD || "",
+  host: process.env.DB_HOST || "mysql-37610bae-jeromequijano17-df99.l.aivencloud.com",
+  port: Number(process.env.DB_PORT) || 23687,
+  user: process.env.DB_USER || "jeromequijano",
+  password: process.env.DB_PASSWORD || "AVNS_Qd6zdoKt3mtXSDLyrRg",
   database: process.env.DB_NAME || "quiz_maker",
   waitForConnections: true,
   connectionLimit: 10,
